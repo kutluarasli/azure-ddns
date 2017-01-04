@@ -16,7 +16,7 @@ public class Program {
 
             String configFilePath = readConfigFilePathFromArguments(args);
 
-            AzureProperties config = AzureProperties.readFrom(configFilePath);
+            ApplicationProperties config = ApplicationProperties.readFrom(configFilePath);
 
             UpdateManager updateManager = new UpdateManager(config);
             updateManager.run();

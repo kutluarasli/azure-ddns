@@ -5,19 +5,19 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-class AzureProperties extends Properties {
+class ApplicationProperties extends Properties {
 
-    private AzureProperties(){
+    private ApplicationProperties(){
 
     }
 
-    public static AzureProperties readFrom(String filePath) throws IOException {
+    public static ApplicationProperties readFrom(String filePath) throws IOException {
 
         validateFile(filePath);
 
         FileInputStream fileInputStream = new FileInputStream(filePath);
 
-        AzureProperties instance = new AzureProperties();
+        ApplicationProperties instance = new ApplicationProperties();
         instance.load(fileInputStream);
 
         fileInputStream.close();

@@ -19,9 +19,9 @@ class UpdateManager {
 
     private static Logger logger = LoggerFactory.getLogger(Program.class);
 
-    private AzureProperties properties;
+    private ApplicationProperties properties;
 
-    UpdateManager(AzureProperties properties) {
+    UpdateManager(ApplicationProperties properties) {
         this.properties = properties;
     }
 
